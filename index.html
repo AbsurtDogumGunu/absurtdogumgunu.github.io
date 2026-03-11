@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Absürt Doğum Günü</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Absürt Doğum Günü</h1>
+    <p>En çılgın doğum günü konseptleri burada!</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Konseptler</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>K-Pop Konsepti</h3>
+          <p>Enerjik, renkli ve eğlenceli doğum günü videosu.</p>
+          <button onclick="openRequest('K-Pop Konsepti')">Talep Gönder</button>
+        </div>
+
+        <div class="card">
+          <h3>İtalyan Mafyası</h3>
+          <p>Karizmatik ve absürt mafya temalı doğum günü konsepti.</p>
+          <button onclick="openRequest('İtalyan Mafyası')">Talep Gönder</button>
+        </div>
+
+        <div class="card">
+          <h3>Zombi Kıyameti</h3>
+          <p>Komik ve aksiyon dolu zombi doğum günü sahnesi.</p>
+          <button onclick="openRequest('Zombi Kıyameti')">Talep Gönder</button>
+        </div>
+
+        <div class="card">
+          <h3>Peaky Blinders</h3>
+          <p>1920’ler havasında sert ve havalı kutlama konsepti.</p>
+          <button onclick="openRequest('Peaky Blinders')">Talep Gönder</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Doğum Günü Talebi</h2>
+      <form>
+        <label>Adınız</label>
+        <input type="text" placeholder="Adınızı yazın" />
+
+        <label>İstenen konsept</label>
+        <input type="text" id="conceptInput" placeholder="Konsept seçin" />
+
+        <label>Mesajınız</label>
+        <textarea placeholder="Nasıl bir video istediğinizi yazın"></textarea>
+
+        <button type="submit">Gönder</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
